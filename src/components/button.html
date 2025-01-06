@@ -5,7 +5,7 @@
     leading: props.leading || "20",
     padding: props.padding || "10px 20px",
     height: props.height || "40",
-    bgColor: props.bgColor || "#000000",
+    bgColor: props.bgColor || "#008080",
     rounded: props.rounded || "100",
     href: props.href || "#",
     borderWidth: props.borderWidth || "0",
@@ -16,35 +16,35 @@
 </script>
 
 <outlook>
-<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=[[href]] style="width:[[`${width}px`]];height:[[`${height}px`]];v-text-anchor:[[verticalAlign]]" arcsize=[[`${rounded/height*100}%`]] fillcolor=[[bgColor]] strokecolor=[[borderColor]] strokeweight=[[`${borderWidth}px`]]>
-<v:textbox>
-<w:anchorlock/>
-<center class="[[class]] font-primary">
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href=[[href]]
+    style="width:[[`${width}px`]];height:[[`${height}px`]];v-text-anchor:[[verticalAlign]]"
+    arcsize=[[`${rounded/height*100}%`]] fillcolor=[[bgColor]] strokecolor=[[borderColor]]
+    strokeweight=[[`${borderWidth}px`]]>
+    <v:textbox>
+      <w:anchorlock />
+      <center class="[[class]] font-primary">
 
-<content/>
+        <content />
 
-</center>
-</v:textbox>
-</v:roundrect>
+      </center>
+    </v:textbox>
+  </v:roundrect>
 </outlook>
 
-<a
-  href=[[href]]
-  class=[[class]]
-  style="
+<a href=[[href]] class=[[class]] style="
     font-family:Arial,Helvetica,sans-serif;
     width: [[`${width}px`]];
     line-height: [[`${leading}px`]];
     border-style: solid;
     border-color: [[borderColor]];
     background-color: [[bgColor]];
+    background: [[bgColor]];
     border-width: [[`${borderWidth}px`]];
     border-radius: [[`${rounded}px`]];
     display: inline-block;
     text-align: center;
     padding: [[padding]];
     mso-hide: all;
-  "
->
-<content/>
+  ">
+  <content />
 </a>
